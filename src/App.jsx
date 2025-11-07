@@ -6,7 +6,7 @@ import Questions from './Questions';
 import ContactForm from './Form';
 import AiImpactLogo from '../photos/ai-impact-logo.png';
 import IITDLogo from '../photos/IIT Delhi - Abu Dhabi_Horizontal_page-0001.jpg';
-import MBZUAI_AI4GS_Banner from '../photos/MBZUAI_AI4GS_Banner_V04_311025_LR_page-0001.jpg';
+import MBZUAI_AI4GS_Banner from '../photos/AI4GS_banner_2.png';
 
 
 export default function AI4GSWebsite() {
@@ -109,85 +109,85 @@ export default function AI4GSWebsite() {
 
   const renderHomePage = () => (
     <>
-      {/* Hero Section */}
-      <section id="home" className="pt-24 pb-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-            AI for the Global South
-          </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-indigo-600 mb-6">
-            Creating a Roadmap for the Next Decade
-          </h2>
-          <div className="flex items-center justify-center gap-4 mb-8 text-lg md:text-xl text-gray-700">
-            <span className="font-semibold">December 9-11, 2025</span>
-            <span className="text-gray-400">|</span>
-            <span className="font-semibold">MBZUAI, Abu Dhabi</span>
-          </div>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            A convening of researchers who work for and with Global South communities to co-define
-            a 10-year holistic and transdisciplinary research agenda for increasing AI's positive impact on the Global South.
-          </p>
-          
+      {/* Hero Section (Banner Image) */}
+      <section id="home" className="pt-20 pb-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <img
+            src={MBZUAI_AI4GS_Banner}
+            alt="AI4GS Banner"
+            className="w-full h-auto rounded-lg shadow-lg object-cover"
+          />
         </div>
       </section>
+
 
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">About AI4GS</h2>
+<section id="about" className="py-16 px-4 bg-white">
+  <div className="max-w-7xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-gray-900 mb-8">About AI4GS</h2>
 
-          <div className="max-w-4xl mx-auto mb-12">
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              AI has made extraordinary progress, yet its benefits remain unevenly distributed, with much of the Global South underrepresented and underserved. Further, 
-              the research agenda and progress of AI are presently influenced by global efforts concentrated within the Global North, with increasing potential for the Global South to play a more central role. As an official pre-summit event of the{' '}
-              <a href="https://impact.indiaai.gov.in/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 underline">
-                India AI Impact Summit
-              </a>{' '}
-              to be held in February 2026 in India, AI4GS will convene researchers who study and work with Global South communities from around the world to discuss two core questions:
-            </p>
+    {/* Date and Location */}
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 text-lg md:text-xl text-gray-700">
+      <span className="font-semibold">December 9–11, 2025</span>
+      <span className="hidden sm:block text-gray-400">|</span>
+      <span className="font-semibold">MBZUAI, Abu Dhabi</span>
+    </div>
 
-            <div className="bg-indigo-50 p-6 rounded-lg mb-6">
-              <ul className="text-lg text-gray-800 italic space-y-3 list-none">
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-3 text-xl">→</span>
-                  <span>How can we ensure that AI reflects the diversity of the world's languages, cultures, and economies?</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-indigo-600 mr-3 text-xl">→</span>
-                  <span>How do we design systems that are inclusive, equitable, and responsive to real developmental needs?</span>
-                </li>
-              </ul>
-            </div>
+    {/* Description */}
+    <div className="max-w-4xl mx-auto text-left">
+      <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        <span className="font-semibold text-indigo-600">AI for the Global South (AI4GS)</span> is a convening of researchers who work for 
+        and with Global South communities to co-define a 10-year holistic and transdisciplinary research agenda for 
+        increasing AI’s positive impact on the Global South.
+      </p>
 
-            <p className="text-lg text-gray-700 leading-relaxed">
-              The three-day seminar will serve as a forum for open dialogue and collective exploration, where researchers from a wide range of disciplines and geographies will come together to 
-              lay out a roadmap for the next decade of AI research, with the Global South right at the center. 
-            </p>
-          </div>
-        </div>
+      <p className="text-lg text-gray-700 leading-relaxed mb-6">
+        While artificial intelligence has made extraordinary progress, its benefits remain unevenly distributed. 
+        The research and development of AI are largely influenced by efforts concentrated in the Global North, 
+        leaving vast opportunities for the Global South to take a more central role in shaping AI’s future.
+      </p>
+
+      <p className="text-lg text-gray-700 leading-relaxed mb-8">
+        As an official pre-summit event of the{' '}
+        <a
+          href="https://impact.indiaai.gov.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-indigo-600 hover:text-indigo-800 underline"
+        >
+          India AI Impact Summit
+        </a>{' '}
+        to be held in February 2026, AI4GS will bring together leading voices from across the world — 
+        including AI researchers, social scientists, policymakers, ethicists, NGOs, and practitioners — 
+        to collaboratively design a decade-long roadmap that ensures AI development is inclusive, equitable, 
+        and responsive to real developmental needs.
+      </p>
+
+      {/* Callout */}
+      <div className="bg-indigo-50 p-6 rounded-lg mb-6">
+        <ul className="text-lg text-gray-800 italic space-y-3 list-none">
+          <li className="flex items-start">
+            <span className="text-indigo-600 mr-3 text-xl">→</span>
+            <span>How can AI reflect the diversity of the world’s languages, cultures, and economies?</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-indigo-600 mr-3 text-xl">→</span>
+            <span>How can we design systems that are inclusive, equitable, and responsive to local needs?</span>
+          </li>
+        </ul>
+      </div>
+
+      <p className="text-lg text-gray-700 leading-relaxed">
+        The three-day seminar will serve as a collaborative forum for open dialogue and knowledge sharing. 
+        Together, we will chart the path forward for AI that truly serves the world — with the Global South at its center.
+      </p>
+    </div>
+  </div>
+</section>
 
 
-        
-        {/* People teaser (below About) */}
-        <section id="people-cta" className="py-10 px-4 bg-white">
-          <div className="max-w-7xl mx-auto text-center">
-            <button
-              onClick={() => {
-                setCurrentPage('people');
-                setActiveSection('people');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-              className="inline-flex items-center justify-center px-8 py-3 rounded-lg font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors shadow-md"
-              aria-label="View participants"
-            >
-              Seminar Participants    
-            </button>
-          </div>
-        </section>
 
-
-      </section>
       {/* Pre-Summit Event Banner */}
       <section className="py-12 px-4 bg-gradient-to-r from-indigo-50 via-purple-50 to-indigo-50">
         <div className="max-w-4xl mx-auto">
