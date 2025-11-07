@@ -2,12 +2,14 @@
   "name": "ai4gs-website",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://ai4gs.github.io", 
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && npx gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.263.1",
