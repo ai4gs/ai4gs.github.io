@@ -4,6 +4,7 @@ import People from './People';
 import Partners from './Partners';
 import Questions from './Questions';
 import ContactForm from './Form';
+import ProgramSchedule from './ProgramSchedule';
 import AiImpactLogo from '../photos/ai-impact-logo.png';
 import IITDLogo from '../photos/IIT Delhi - Abu Dhabi_Horizontal_page-0001.jpg';
 import MBZUAI_AI4GS_Banner from '../photos/AI4GS_banner_2.png';
@@ -20,6 +21,7 @@ export default function AI4GSWebsite() {
     { name: 'About', id: 'about', page: 'home' },
     // { name: 'Events', id: 'events', page: 'home' },s
     { name: 'People', id: 'people', page: 'people' },
+    { name: 'Program Schedule', id: 'program', page: 'program' },
     // { name: 'Partners', id: 'partners', page: 'partners' },
     // { name: 'Submit Questions', id: 'questions', page: 'questions' },
   ];
@@ -340,6 +342,7 @@ export default function AI4GSWebsite() {
       <div className="pt-16">
         {currentPage === 'home' && renderHomePage()}
         {currentPage === 'people' && <People />}
+        {currentPage === 'program' && <ProgramSchedule />}
         {currentPage === 'partners' && <Partners onContactClick={handleContactClick} />}
         {currentPage === 'questions' && <Questions />}
       </div>
