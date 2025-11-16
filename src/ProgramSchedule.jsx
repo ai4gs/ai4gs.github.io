@@ -27,7 +27,7 @@ export default function ProgramSchedule() {
             <p className="font-semibold mt-1">Confirmed Panelists:</p>
             <ul className="ml-4 list-disc">
               <li>Weibke Denecke</li>
-              <li>Olugbenga G. Ogedegbe</li>
+              <li>Kalika Bali</li>
               <li>Vukosi Marivate</li>
             </ul>
           </div>

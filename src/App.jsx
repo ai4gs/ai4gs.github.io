@@ -75,7 +75,7 @@ export default function AI4GSWebsite() {
 
   const eventsData = [
     {
-      day: 'Day 1',
+      day: 'Day 0',
       date: 'December 9th, 2025',
       events: [
         { time: '09:00 AM', title: 'Event 1', description: 'Opening keynote and welcome session' },
