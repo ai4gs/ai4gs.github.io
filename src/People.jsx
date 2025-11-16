@@ -16,7 +16,7 @@ import GayatriBhat from '../photos/Gayatri Bhat.jpg';
 import HellinaNigatu from '../photos/Hellina Nigatu.png';
 import HowardLakougna from '../photos/Howard Lakougna.jpeg';
 import IshtiaqueAhmed from '../photos/Ishtiaque Ahmed.jpg';
-import JackiONeill from '../photos/Jacki O Neill.jpg';
+// import JackiONeill from '../photos/Jacki O Neill.jpg';
 import JoyojeetPal from '../photos/Joyojeet Pal.jpg';
 import KalikaBali from '../photos/Kalika Bali.jpg';
 import KentaroToyama from '../photos/Kentaro Toyama.jpg';
@@ -35,7 +35,7 @@ import SunayanaSitaram from '../photos/Sunayana Sitaram.png';
 import SunipaDev from '../photos/Sunipa Dev.jpg';
 import TalalRahwan from '../photos/Talal Rahwan.jpg';
 import VukosiMarivate from '../photos/Vukosi Marivate.jpg';
-import WeibkeDenecke from '../photos/Wiebke Denecke.jpg';
+import WiebkeDenecke from '../photos/Wiebke Denecke.jpg';
 import YasirZaki from '../photos/Yasir Zaki.png';
 import Yosephine from '../photos/Yosephine.jpg';
 import AnilBDeolalikar from '../photos/‪Anil B. Deolalikar.png';
@@ -46,6 +46,9 @@ import LyantonietteChua from '../photos/Lyantoniette Chua.jpg';
 import ChetanArora from '../photos/Chetan Arora.jpg';
 import SandeepSukumaran from '../photos/Sandeep_updated.png';
 import HariprasadKodamana from '../photos/Hariprasad Kodamana.jpg';
+import SalmanKhan from '../photos/Salman Khan.jpeg';
+import TatapongBeyala from '../photos/Tatapong Beyala.jpeg';
+import AlhamFikriAji from '../photos/Alham Aji Fikri.jpg';
 
 export default function People() {
   const [selectedView, setSelectedView] = useState('organizers');
@@ -107,12 +110,15 @@ export default function People() {
   { name: 'Talal Rahwan', institution: 'NYU Abu Dhabi', photoUrl: TalalRahwan, profile: 'https://www.trahwan.com/' },
   { name: 'Thamar Solorio', institution: 'MBZUAI', photoUrl: ThamarSolorio, profile: 'https://mbzuai.ac.ae/study/faculty/thamar-solorio/' },
   { name: 'Vukosi Marivate', institution: 'Uo Pretoria', photoUrl: VukosiMarivate, profile: 'https://www.vima.co.za/' },
-  { name: 'Weibke Denecke', institution: 'MIT', photoUrl: WeibkeDenecke, profile: 'https://lit.mit.edu/denecke/' },
+  { name: 'Wiebke Denecke', institution: 'MIT', photoUrl: WiebkeDenecke, profile: 'https://lit.mit.edu/denecke/' },
   { name: 'Yasir Zaki', institution: 'NYU Abu Dhabi', photoUrl: YasirZaki, profile: 'https://ae.linkedin.com/in/yasir-zaki-7716a17' },
   { name: 'Yosephine', institution: 'AI Singapore', photoUrl: Yosephine, profile: 'https://blogs.ntu.edu.sg/multi-net-lab/yosephine-susanto/' },
   { name: 'Lyantoniette Chua', institution: 'AI Safety Asia', photoUrl: LyantonietteChua, profile: 'https://www.linkedin.com/in/lyantoniettechua/' },
   { name: 'Chetan Arora', institution: 'IIT Delhi', photoUrl: ChetanArora, profile: 'https://www.cse.iitd.ac.in/~chetan/' },
-  { name: 'Sandeep Sukumaran', institution: 'IIT Delhi', photoUrl: SandeepSukumaran, profile: 'https://web.iitd.ac.in/~san81/' }
+  { name: 'Sandeep Sukumaran', institution: 'IIT Delhi', photoUrl: SandeepSukumaran, profile: 'https://web.iitd.ac.in/~san81/' },
+  { name: 'Salman Khan', institution: 'MBZUAI', photoUrl: SalmanKhan, profile: 'https://salman-h-khan.github.io/' },
+  { name: 'Tatapong Beyala', institution: 'GURL BOSS PRODUCTION', photoUrl: TatapongBeyala, profile: 'https://www.linkedin.com/in/tatapong-beyala-31a55a201/?originalSubdomain=cm' },
+  { name: 'Alham Fikri Aji', institution: 'MBZUAI', photoUrl: AlhamFikriAji, profile: 'https://mbzuai.ac.ae/study/faculty/alham-fikri-aji/' }  
 ].sort((a, b) => a.name.localeCompare(b.name));
   
   const renderSocialEventChair = () => (
