@@ -8,6 +8,7 @@ import ProgramSchedule from './ProgramSchedule';
 import AiImpactLogo from '../photos/ai-impact-logo.png';
 import IITDLogo from '../photos/IIT Delhi - Abu Dhabi_Horizontal_page-0001.jpg';
 import MBZUAI_AI4GS_Banner from '../photos/AI4GS_banner_2.png';
+import MicrosoftLogo from '../photos/microsoft-logo.png';
 
 
 export default function AI4GSWebsite() {
@@ -348,7 +349,7 @@ export default function AI4GSWebsite() {
       </div>
 
       {/* Partners Section */}
-      <section className="py-12 px-4 bg-white">
+      {/* <section className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-10">
             <span className="inline-block rounded-lg border border-indigo-100 bg-gradient-to-r from-indigo-50 to-purple-50 px-4 py-2 text-2xl md:text-3xl font-bold text-gray-900">
@@ -369,6 +370,63 @@ export default function AI4GSWebsite() {
               className="h-48 sm:h-56 md:h-64 w-auto mx-auto object-contain"
             />
           </a>
+        </div>
+      </section> */}
+      {/* Co-Organizers and Sponsors Section */}
+      <section className="py-12 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-center items-stretch gap-10">
+            {/* Co-Organizer Column */}
+            <div className="flex-1 text-center">
+              <h2 className="mb-10">
+                <span className="inline-block rounded-lg border border-indigo-100 bg-gradient-to-r from-indigo-50 to-purple-50 px-4 py-2 text-2xl md:text-3xl font-bold text-gray-900">
+                  Co-Organizer
+                </span>
+              </h2>
+              <a
+                href="https://iitdabudhabi.ac.ae/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit IIT Delhi Abu Dhabi website"
+                className="inline-block focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded"
+              >
+                <img
+                  src={IITDLogo}
+                  alt="IIT Delhi Abu Dhabi"
+                  className="h-48 sm:h-56 md:h-64 w-auto mx-auto object-contain mb-4"
+                />
+              </a>
+              {/* <p className="text-lg text-gray-700">
+                Indian Institute of Technology Delhi <br />
+                Abu Dhabi Campus
+              </p> */}
+            </div>
+
+            {/* Sponsors Column */}
+            <div className="flex-1 text-center">
+              <h2 className="mb-10">
+                <span className="inline-block rounded-lg border border-purple-100 bg-gradient-to-r from-indigo-50 to-purple-50 px-4 py-2 text-2xl md:text-3xl font-bold text-gray-900">
+                  Sponsor
+                </span>
+              </h2>
+              <a
+                href="https://www.microsoft.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Microsoft website"
+                className="inline-block focus:outline-none focus:ring-2 focus:ring-indigo-600 rounded"
+              >
+                <img
+                  src={MicrosoftLogo}
+                  alt="Microsoft"
+                  className="h-48 sm:h-56 md:h-64 w-auto mx-auto object-contain mb-4"
+                />
+              </a>
+              {/* <p className="text-lg text-gray-700">
+                Microsoft is the lead sponsor for AI4GS, supporting<br />research and innovation for AI in the Global South.
+              </p> */}
+            </div>
+          </div>
         </div>
       </section>
 
