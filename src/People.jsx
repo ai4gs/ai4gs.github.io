@@ -44,7 +44,7 @@ import GbengaOgedegbe from '../photos/Gbenga Ogedegbe.jpg';
 import ThamarSolorio from '../photos/Thamar Solorio.jpg';
 import LyantonietteChua from '../photos/Lyantoniette Chua.jpg';
 import ChetanArora from '../photos/Chetan Arora.jpg';
-import SandeepSukumaran from '../photos/Sandeep_updated.png';
+import SandeepSukumaran from '../photos/Sandeep Sukumaran.png';
 import HariprasadKodamana from '../photos/Hariprasad Kodamana.jpg';
 import SalmanKhan from '../photos/Salman Khan.jpeg';
 import TatapongBeyala from '../photos/Tatapong Beyala.jpeg';
