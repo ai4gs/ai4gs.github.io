@@ -49,6 +49,7 @@ import HariprasadKodamana from '../photos/Hariprasad Kodamana.jpg';
 import SalmanKhan from '../photos/Salman Khan.jpeg';
 import TatapongBeyala from '../photos/Tatapong Beyala.jpeg';
 import AlhamFikriAji from '../photos/Alham Aji Fikri.jpg';
+import ParagSingla from '../photos/Parag Singla.jpg';
 
 export default function People() {
   const [selectedView, setSelectedView] = useState('organizers');
@@ -118,7 +119,8 @@ export default function People() {
   { name: 'Sandeep Sukumaran', institution: 'IIT Delhi', photoUrl: SandeepSukumaran, profile: 'https://web.iitd.ac.in/~san81/' },
   { name: 'Salman Khan', institution: 'MBZUAI', photoUrl: SalmanKhan, profile: 'https://salman-h-khan.github.io/' },
   { name: 'Tatapong Beyala', institution: 'GURL BOSS PRODUCTION', photoUrl: TatapongBeyala, profile: 'https://www.linkedin.com/in/tatapong-beyala-31a55a201/?originalSubdomain=cm' },
-  { name: 'Alham Fikri Aji', institution: 'MBZUAI', photoUrl: AlhamFikriAji, profile: 'https://mbzuai.ac.ae/study/faculty/alham-fikri-aji/' }  
+  { name: 'Alham Fikri Aji', institution: 'MBZUAI', photoUrl: AlhamFikriAji, profile: 'https://mbzuai.ac.ae/study/faculty/alham-fikri-aji/' },
+  { name: 'Parag Singla', institution: 'IIT Delhi', photoUrl: ParagSingla, profile: 'https://www.cse.iitd.ac.in/~parags/' }  
 ].sort((a, b) => a.name.localeCompare(b.name));
   
   const renderSocialEventChair = () => (
