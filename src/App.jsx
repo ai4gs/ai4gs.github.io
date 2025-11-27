@@ -26,7 +26,16 @@ export default function AI4GSWebsite() {
     { name: 'People', id: 'people', page: 'people' },
     { name: 'Program Schedule', id: 'program', page: 'program' },
     { name: 'Participate', id: 'participate', page: 'participate' },
-    { name: 'Venue', id: 'venue', page: 'venue' },
+    {
+      name: 'Venue',
+      id: 'venue',
+      page: null,
+      children: [
+        { name: 'Important Information', id: 'important-info', page: 'venue' },
+        { name: 'Places to Visit', id: 'places', external: "https://coling2025.org/venue/places/" }
+      ]
+    },
+
     
     // { name: 'Partners', id: 'partners', page: 'partners' },
     // { name: 'Submit Questions', id: 'questions', page: 'questions' },
@@ -300,19 +309,46 @@ export default function AI4GSWebsite() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navigation.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavigation(item)}
-                  className={`${
-                    (currentPage === item.page && activeSection === item.id)
-                      ? 'text-indigo-600 border-b-2 border-indigo-600'
-                      : 'text-gray-700 hover:text-indigo-600'
-                  } px-3 py-2 text-sm font-medium transition-colors`}
-                >
-                  {item.name}
-                </button>
+                <div key={item.id} className="relative group">
+                  <button
+                    onClick={() => {
+                      if (!item.children) handleNavigation(item);
+                    }}
+                    className={`px-3 py-2 text-sm font-medium transition-colors ${
+                      activeSection === item.id
+                        ? 'text-indigo-600 border-b-2 border-indigo-600'
+                        : 'text-gray-700 hover:text-indigo-600'
+                    }`}
+                  >
+                    {item.name}
+                    {item.children && <span className="ml-1">▾</span>}
+                  </button>
+
+                  {/* Dropdown menu */}
+                  {item.children && (
+                    <div className="absolute left-0 mt-2 w-48 bg-white border rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                      {item.children.map((child) => (
+                        <button
+                          key={child.id}
+                          onClick={() => {
+                            if (child.external) {
+                              window.open(child.external, "_blank");
+                            } else {
+                              handleNavigation(child);
+                            }
+                          }}
+
+                          className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-indigo-50"
+                        >
+                          {child.name}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
+
 
             {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
