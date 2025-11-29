@@ -92,7 +92,7 @@ export default function People() {
   //{ name: 'Animesh Mukherjee', institution: 'IIT Kgp', photoUrl: AnimeshMukherjee, profile: 'https://cse.iitkgp.ac.in/~animeshm/' },
   { name: 'Bashar Alhafni', institution: 'MBZUAI', photoUrl: BasharAlhafni, profile: 'https://www.basharalhafni.com/' },
   { name: 'Boulbaba Ben Amor', institution: 'Inception/Microsoft AI4SG', photoUrl: BoulbabaBenAmor, profile: 'https://sites.google.com/view/boulbaba-ben-amor' },
-  { name: 'Chirantan Chatterjee', institution: 'MBZUAI / Sussex Abu Dhabi', photoUrl: ChirantanChatterjee, profile: 'https://sites.google.com/view/chirantanonline/home' },
+  // { name: 'Chirantan Chatterjee', institution: 'MBZUAI / Sussex Abu Dhabi', photoUrl: ChirantanChatterjee, profile: 'https://sites.google.com/view/chirantanonline/home' },
   { name: 'Danish Pruthi', institution: 'IISc', photoUrl: DanishPruthi, profile: 'https://danishpruthi.com/' },
   // { name: 'Olugbenga G. Ogedegbe', institution: 'NYU', photoUrl: GbengaOgedegbe, profile: 'https://nyulangone.org/doctors/1538227699/olugbenga-g-ogedegbe' },
   { name: 'Howard Lakougna', institution: 'Gates Foundation', photoUrl: HowardLakougna, profile: 'https://www.linkedin.com/in/howard-lakougna-5125b378' },

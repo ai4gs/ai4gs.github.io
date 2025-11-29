@@ -11,6 +11,7 @@ import AiImpactLogo from '../photos/ai-impact-logo.png';
 import IITDLogo from '../photos/IIT Delhi - Abu Dhabi_Horizontal_page-0001.jpg';
 import MBZUAI_AI4GS_Banner from '../photos/AI4GS_banner_2.png';
 import MicrosoftLogo from '../photos/microsoft-logo.png';
+import Places from './Places';
 
 
 export default function AI4GSWebsite() {
@@ -32,11 +33,10 @@ export default function AI4GSWebsite() {
       page: null,
       children: [
         { name: 'Important Information', id: 'important-info', page: 'venue' },
-        { name: 'Places to Visit', id: 'places', external: "https://coling2025.org/venue/places/" }
+        // { name: 'Places to Visit', id: 'places', external: "https://coling2025.org/venue/places/" }
+        { name: 'Places to Visit', id: 'places', page: 'places' }
       ]
-    },
-
-    
+    },    
     // { name: 'Partners', id: 'partners', page: 'partners' },
     // { name: 'Submit Questions', id: 'questions', page: 'questions' },
   ];
@@ -389,6 +389,7 @@ export default function AI4GSWebsite() {
         {currentPage === 'questions' && <Questions />}
         {currentPage === 'participate' && <Participate />}
         {currentPage === 'venue' && <Venue />}
+        {currentPage === 'places' && <Places />}
       </div>
 
       {/* Partners Section */}
