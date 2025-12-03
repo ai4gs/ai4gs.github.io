@@ -107,7 +107,7 @@ export default function ProgramSchedule() {
         venue: "MUH",
         details: (
           <div className="text-sm text-gray-700 mt-1">
-            <p className="font-semibold mb-2">Panel Discussion on <em>Global South AI: Forging Tech's Next Frontier</em></p>
+            <p className="font-semibold mb-2"><strong>Panel Discussion on</strong> <em>Global South AI: Forging Tech's Next Frontier</em></p>
             <p className="font-semibold mt-1 mb-1">Panelists:</p>
             <ul className="ml-4 list-disc">
               <li>Elizabeth Churchill (Moderator)</li>
@@ -467,122 +467,128 @@ export default function ProgramSchedule() {
                             {/* Panel Discussion Details */}
                             {sessionData.type === "open" && sessionData.details && (
                               <div className="text-xs text-gray-700 bg-pink-50 p-3 rounded border-l-4 border-pink-400">
-                                {/* Inauguration Block */}
-                                <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600 mb-3">
-                                  <p className="font-bold text-pink-900 mb-1">🎓 Inauguration</p>
-                                  <p className="text-xs text-pink-700">9:30 – 10:15 AM</p>
-                                </div>
-                                
-                                {/* Keynote Block with Inline Expansion */}
-                                {idx === 0 && (
-                                <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600">
-                                  <div className="flex items-center gap-2 mb-1">
-                                    <button
-                                      onClick={() =>
-                                        setExpandedKeynoteDetails(
-                                          expandedKeynoteDetails === `${dayNum}-${idx}`
-                                            ? null
-                                            : `${dayNum}-${idx}`
-                                        )
-                                      }
-                                      className="text-pink-700 hover:text-pink-900 font-bold text-sm"
-                                    >
-                                      {expandedKeynoteDetails === `${dayNum}-${idx}` ? "▼" : "▶"}
-                                    </button>
-                                    <p className="font-bold text-pink-900">🎤 Keynote by Prof. Anil B. Deolalikar</p>
-                                  </div>
-                                  <p className="text-xs text-pink-700 ml-6">10:15 – 11:00 AM</p>
-                                  
-                                  {expandedKeynoteDetails === `${dayNum}-${idx}` && (
-                                    <div className="mt-3 space-y-4 bg-white p-4 rounded text-gray-700 border border-pink-200 ml-6">
-                                      <h3 className="font-semibold text-pink-900 mb-2">Keynote: AI and the Economies of the Global South</h3>
-                                      
-                                      {/* Speaker */}
-                                      <div>
-                                        <h4 className="font-semibold text-pink-900 mb-2">Speaker</h4>
-                                        <p className="text-sm">Prof. Anil B. Deolalikar, Professor of Economics, University of California, Riverside (USA)</p>
-                                      </div>
-                                      
-                                      {/* Abstract */}
-                                      <div>
-                                        <h4 className="font-semibold text-pink-900 mb-2">Abstract</h4>
-                                        <div className="text-sm text-gray-700 space-y-2">
-                                          <p>
-                                            Artificial intelligence (AI) presents both opportunities and risks for developing economies.
-                                            However, it remains uncertain whether AI will serve as a leapfrogging technology, allowing the
-                                            Global South to catch up with advanced economies, or if it will lead to greater divergence. This
-                                            presentation explores AI's impact on the Global South through the lens of development
-                                            economics, emphasizing labor markets, infrastructure constraints, institutional challenges, and
-                                            benefit-cost analysis.
-                                          </p>
-                                          <p>
-                                            The presentation examines how AI affects employment differently in developing countries than
-                                            in advanced economies. Standard automation models, designed for high-income countries,
-                                            require significant adjustments when applied to economies with large agricultural and informal
-                                            sectors, different relative factor prices, and varied infrastructure capabilities. Three scenarios are
-                                            explored: vulnerability in service exports (particularly in business process outsourcing), potential
-                                            productivity gains in agriculture, and the enigma of the large informal sector, which AI-driven
-                                            changes might entirely overlook.
-                                          </p>
-                                          <p>
-                                            Besides labor market implications, the presentation covers additional challenges like data
-                                            governance, infrastructure needs, and the institutional capacity necessary for effective regulation.
-                                            It also explains how benefit-cost analysis – a tool commonly used in development economics to
-                                            prioritize policy actions – can be applied to rank AI initiatives in the Global South based on their
-                                            impact relative to cost.
-                                          </p>
-                                          <p>
-                                            Throughout the presentation, the focus is on the unique contributions of development economics
-                                            in understanding AI effects. The aim is to identify important knowledge gaps that require
-                                            rigorous empirical research. Ultimately, the goal is to encourage transdisciplinary dialogue on
-                                            how to maximize AI's potential while effectively managing its risks in low- and middle-income
-                                            countries.
-                                          </p>
-                                        </div>
-                                      </div>
-                                      
-                                      {/* Speaker Bio */}
-                                      <div>
-                                        <h4 className="font-semibold text-pink-900 mb-2">Speaker Bio</h4>
-                                        <div className="text-sm text-gray-700 space-y-2">
-                                          <p>
-                                            Anil Deolalikar is Professor of Economics and Founding
-                                            Dean Emeritus of the School of Public Policy at the
-                                            University of California, Riverside. He serves as Chair of the
-                                            Board of Directors of the global think-tank, One Health
-                                            Trust, based in Washington, D.C. and Bengaluru. He also
-                                            served as Chair of the Board of Directors for the UC-wide
-                                            Global Health Institute from 2017 to 2022.
-                                          </p>
-                                          <p>
-                                            Deolalikar previously taught at the University of
-                                            Washington, the University of Pennsylvania, and Harvard
-                                            University. He served as Lead Human Development
-                                            Economist for the World Bank in New Delhi in 2002-03 and
-                                            Senior Human Development Economist for the World Bank
-                                            in Nairobi in 1995-96.
-                                          </p>
-                                          <p>
-                                            Deolalikar is a development economist who has published numerous books and articles
-                                            on the economics of nutrition, health, education, demography, and poverty and social
-                                            protection in developing countries. He is co-editor of <em>The Journal of Asian and African
-                                            Studies</em> and editor-in-chief of the World Scientific Publishing book series, <em>Grand Public
-                                            Policy Challenges of the 21st Century</em>. He also serves on the editorial board of <em>The
-                                            Journal of Developing Societies</em>. He is an elected Fellow of the American Association for
-                                            the Advancement of Science and was a recipient of the World Bank's Robert McNamara
-                                            Fellowship for International Development early in his career.
-                                          </p>
-                                          <p>
-                                            Deolalikar obtained his Ph.D. from Stanford University, a Diploma in Development
-                                            Economics from Cambridge University, and BA summa cum laude from Harvard
-                                            University. He was also a Rockefeller Foundation Postdoctoral Fellow in economic
-                                            demography at Yale University.
-                                          </p>
-                                        </div>
-                                      </div>
+                                {/* Inauguration and Keynote - Only for first session (idx === 0) */}
+                                {idx === 0 ? (
+                                  <>
+                                    {/* Inauguration Block */}
+                                    <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600 mb-3">
+                                      <p className="font-bold text-pink-900 mb-1">🎓 Inauguration</p>
+                                      <p className="text-xs text-pink-700">9:30 – 10:15 AM</p>
                                     </div>
-                                  )}
-                                </div>
+                                    
+                                    {/* Keynote Block with Inline Expansion */}
+                                    <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600">
+                                      <div className="flex items-center gap-2 mb-1">
+                                        <button
+                                          onClick={() =>
+                                            setExpandedKeynoteDetails(
+                                              expandedKeynoteDetails === `${dayNum}-${idx}`
+                                                ? null
+                                                : `${dayNum}-${idx}`
+                                            )
+                                          }
+                                          className="text-pink-700 hover:text-pink-900 font-bold text-sm"
+                                        >
+                                          {expandedKeynoteDetails === `${dayNum}-${idx}` ? "▼" : "▶"}
+                                        </button>
+                                        <p className="font-bold text-pink-900">🎤 Keynote by Prof. Anil B. Deolalikar</p>
+                                      </div>
+                                      <p className="text-xs text-pink-700 ml-6">10:15 – 11:00 AM</p>
+                                      
+                                      {expandedKeynoteDetails === `${dayNum}-${idx}` && (
+                                        <div className="mt-3 space-y-4 bg-white p-4 rounded text-gray-700 border border-pink-200 ml-6">
+                                          <h3 className="font-semibold text-pink-900 mb-2">Keynote: AI and the Economies of the Global South</h3>
+                                          
+                                          {/* Speaker */}
+                                          <div>
+                                            <h4 className="font-semibold text-pink-900 mb-2">Speaker</h4>
+                                            <p className="text-sm">Prof. Anil B. Deolalikar, Professor of Economics, University of California, Riverside (USA)</p>
+                                          </div>
+                                          
+                                          {/* Abstract */}
+                                          <div>
+                                            <h4 className="font-semibold text-pink-900 mb-2">Abstract</h4>
+                                            <div className="text-sm text-gray-700 space-y-2">
+                                              <p>
+                                                Artificial intelligence (AI) presents both opportunities and risks for developing economies.
+                                                However, it remains uncertain whether AI will serve as a leapfrogging technology, allowing the
+                                                Global South to catch up with advanced economies, or if it will lead to greater divergence. This
+                                                presentation explores AI's impact on the Global South through the lens of development
+                                                economics, emphasizing labor markets, infrastructure constraints, institutional challenges, and
+                                                benefit-cost analysis.
+                                              </p>
+                                              <p>
+                                                The presentation examines how AI affects employment differently in developing countries than
+                                                in advanced economies. Standard automation models, designed for high-income countries,
+                                                require significant adjustments when applied to economies with large agricultural and informal
+                                                sectors, different relative factor prices, and varied infrastructure capabilities. Three scenarios are
+                                                explored: vulnerability in service exports (particularly in business process outsourcing), potential
+                                                productivity gains in agriculture, and the enigma of the large informal sector, which AI-driven
+                                                changes might entirely overlook.
+                                              </p>
+                                              <p>
+                                                Besides labor market implications, the presentation covers additional challenges like data
+                                                governance, infrastructure needs, and the institutional capacity necessary for effective regulation.
+                                                It also explains how benefit-cost analysis – a tool commonly used in development economics to
+                                                prioritize policy actions – can be applied to rank AI initiatives in the Global South based on their
+                                                impact relative to cost.
+                                              </p>
+                                              <p>
+                                                Throughout the presentation, the focus is on the unique contributions of development economics
+                                                in understanding AI effects. The aim is to identify important knowledge gaps that require
+                                                rigorous empirical research. Ultimately, the goal is to encourage transdisciplinary dialogue on
+                                                how to maximize AI's potential while effectively managing its risks in low- and middle-income
+                                                countries.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          
+                                          {/* Speaker Bio */}
+                                          <div>
+                                            <h4 className="font-semibold text-pink-900 mb-2">Speaker Bio</h4>
+                                            <div className="text-sm text-gray-700 space-y-2">
+                                              <p>
+                                                Anil Deolalikar is Professor of Economics and Founding
+                                                Dean Emeritus of the School of Public Policy at the
+                                                University of California, Riverside. He serves as Chair of the
+                                                Board of Directors of the global think-tank, One Health
+                                                Trust, based in Washington, D.C. and Bengaluru. He also
+                                                served as Chair of the Board of Directors for the UC-wide
+                                                Global Health Institute from 2017 to 2022.
+                                              </p>
+                                              <p>
+                                                Deolalikar previously taught at the University of
+                                                Washington, the University of Pennsylvania, and Harvard
+                                                University. He served as Lead Human Development
+                                                Economist for the World Bank in New Delhi in 2002-03 and
+                                                Senior Human Development Economist for the World Bank
+                                                in Nairobi in 1995-96.
+                                              </p>
+                                              <p>
+                                                Deolalikar is a development economist who has published numerous books and articles
+                                                on the economics of nutrition, health, education, demography, and poverty and social
+                                                protection in developing countries. He is co-editor of <em>The Journal of Asian and African
+                                                Studies</em> and editor-in-chief of the World Scientific Publishing book series, <em>Grand Public
+                                                Policy Challenges of the 21st Century</em>. He also serves on the editorial board of <em>The
+                                                Journal of Developing Societies</em>. He is an elected Fellow of the American Association for
+                                                the Advancement of Science and was a recipient of the World Bank's Robert McNamara
+                                                Fellowship for International Development early in his career.
+                                              </p>
+                                              <p>
+                                                Deolalikar obtained his Ph.D. from Stanford University, a Diploma in Development
+                                                Economics from Cambridge University, and BA summa cum laude from Harvard
+                                                University. He was also a Rockefeller Foundation Postdoctoral Fellow in economic
+                                                demography at Yale University.
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      )}
+                                    </div>
+                                  </>
+                                ) : (
+                                  /* Panel Discussion for other sessions */
+                                  sessionData.details
                                 )}
                               </div>
                             )}
