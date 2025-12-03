@@ -414,6 +414,37 @@ export default function ProgramSchedule() {
                     const hasDetails = sessionData.details || sessionData.type === "break";
                     const isBreak = sessionData.type === "break";
                     const isExpanded = expandedTime === `${dayNum}-${idx}`;
+                    
+                    // Get background colors based on session type
+                    const getSessionColor = () => {
+                      switch (sessionData.type) {
+                        case "plenary":
+                          return "bg-indigo-50 border-l-4 border-indigo-300";
+                        case "open":
+                          return "bg-pink-50 border-l-4 border-pink-300";
+                        case "breakout":
+                          return "bg-yellow-50 border-l-4 border-yellow-300";
+                        case "break":
+                          return "bg-gray-100 border-l-4 border-gray-400";
+                        default:
+                          return "bg-gray-50";
+                      }
+                    };
+                    
+                    const getSessionExpandedColor = () => {
+                      switch (sessionData.type) {
+                        case "plenary":
+                          return "bg-indigo-100 border-l-4 border-indigo-500";
+                        case "open":
+                          return "bg-pink-100 border-l-4 border-pink-500";
+                        case "breakout":
+                          return "bg-yellow-100 border-l-4 border-yellow-500";
+                        case "break":
+                          return "bg-gray-200 border-l-4 border-gray-500";
+                        default:
+                          return "bg-gray-100";
+                      }
+                    };
 
                     return (
                       <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden">
@@ -423,7 +454,7 @@ export default function ProgramSchedule() {
                             setExpandedTime(isExpanded ? null : `${dayNum}-${idx}`)
                           }
                           className={`w-full flex items-center gap-3 p-3 transition ${
-                            isExpanded ? "bg-indigo-100" : "bg-gray-50 hover:bg-gray-100"
+                            isExpanded ? getSessionExpandedColor() : getSessionColor()
                           } ${isBreak ? "cursor-default" : "cursor-pointer"}`}
                           disabled={isBreak}
                         >
