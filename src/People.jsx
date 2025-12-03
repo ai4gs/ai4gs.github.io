@@ -107,7 +107,7 @@ export default function People() {
   { name: 'Melissa Densmore', institution: 'UCT, South Africa', photoUrl: MelissaDensmore, profile: 'https://www.melissadensmore.com/' },
   { name: 'Munmun De Choudhury', institution: 'Georgia Tech', photoUrl: MunmunDeChoudhury, profile: 'http://www.munmund.net/' },
   { name: 'Wessam Ezzeddine', institution: 'AI Safety UAE', photoUrl: WessamEzzeddine, profile: 'https://ae.linkedin.com/in/wes-ezzeddine' },
-  { name: 'Rida Qadri', institution: 'Google', photoUrl: RidaQadri, profile: 'https://ridaqadri.net/' },
+  // { name: 'Rida Qadri', institution: 'Google', photoUrl: RidaQadri, profile: 'https://ridaqadri.net/' },
   { name: 'Talal Rahwan', institution: 'NYU Abu Dhabi', photoUrl: TalalRahwan, profile: 'https://www.trahwan.com/' },
   { name: 'Thamar Solorio', institution: 'MBZUAI', photoUrl: ThamarSolorio, profile: 'https://mbzuai.ac.ae/study/faculty/thamar-solorio/' },
   { name: 'Vukosi Marivate', institution: 'Uo Pretoria', photoUrl: VukosiMarivate, profile: 'https://www.vima.co.za/' },

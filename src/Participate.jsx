@@ -74,15 +74,16 @@ export default function Participate() {
           </div>
 
           <div className="text-center">
-            <a
-              href="https://forms.office.com/r/PgXGQMXbPt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg"
-            >
-              <FileText className="h-5 w-5" />
-              Submit Poster
-            </a>
+            <div className="inline-flex flex-col items-center gap-2">
+              <button
+                disabled
+                className="inline-flex items-center gap-2 bg-gray-400 text-white px-6 py-3 rounded-lg font-semibold cursor-not-allowed opacity-60 shadow-md"
+              >
+                <FileText className="h-5 w-5" />
+                Submit Poster
+              </button>
+              <p className="text-red-600 font-semibold text-sm">Submission deadline closed (27th November 2025)</p>
+            </div>
           </div>
         </div>
 
