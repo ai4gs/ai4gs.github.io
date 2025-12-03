@@ -76,7 +76,7 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
                 <li>
-                  <span className="font-semibold text-blue-800">Alham Fikri Aji</span> – [vision talk title TBC]
+                  <span className="font-semibold text-blue-800">Alham Fikri Aji</span> – <em>VLMs are Confused Tourists</em>
                 </li>
               </ul>
             </div>
@@ -84,16 +84,16 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-800 mb-2">⚡ Lightning Talks (8 mins each):</p>
               <ul className="ml-4 list-disc space-y-1"> 
                 <li>
-                  <span className="font-semibold text-blue-700">Bashar Alhafni</span> – "Arabic NLP"
+                  <span className="font-semibold text-blue-700">Bashar Alhafni</span> – <em>Arabic NLP</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Julia Kreutzer</span> – "Aya model family – building multilingual LLMs: what do we rely on and what is missing?"
+                  <span className="font-semibold text-blue-700">Hariprasad Kodamana </span> –  Title TBD
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Hari (Energy)</span> – short lightning talk on energy & AI [title TBC]
+                  <span className="font-semibold text-blue-700">Julia Kreutzer</span> – <em>Aya Model Family – Building Multilingual LLMs: What Do We Rely on and What Is Missing?</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Luciana Benotti</span> – "Sourcing Training/Evaluation Data for AI: LatamGPT and HESEIA projects"
+                  <span className="font-semibold text-blue-700">Luciana Benotti</span> – <em>Sourcing Training/Evaluation Data for AI: LatamGPT and HESEIA Projects</em>
                 </li>
               </ul>
             </div>
@@ -107,15 +107,14 @@ export default function ProgramSchedule() {
         venue: "MUH",
         details: (
           <div className="text-sm text-gray-700 mt-1">
-            <p>
-              <span className="font-semibold">Moderator:</span> Elizabeth
-              Churchill
-            </p>
-            <p className="font-semibold mt-1">Confirmed Panelists:</p>
+            <p className="font-semibold mb-2">Panel Discussion on <em>Global South AI: Forging Tech's Next Frontier</em></p>
+            <p className="font-semibold mt-1 mb-1">Panelists:</p>
             <ul className="ml-4 list-disc">
-              <li>Weibke Denecke</li>
+              <li>Elizabeth Churchill (Moderator)</li>
               <li>Kalika Bali</li>
+              <li>Wiebke Denecke</li>
               <li>Vukosi Marivate</li>
+              <li>Yasir Zaki</li>
             </ul>
           </div>
         ),
@@ -140,7 +139,7 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
                 <li>
-                  <span className="font-semibold text-blue-800">Munmun De Choudhury</span> – [vision talk title TBC]
+                  <span className="font-semibold text-blue-800">Munmun De Choudhury</span> – Title TBD
                 </li>
               </ul>
             </div>
@@ -148,19 +147,19 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-800 mb-2">⚡ Lightning Talks (8 mins each):</p>
               <ul className="ml-4 list-disc space-y-1"> 
                 <li>
-                  <span className="font-semibold text-blue-700">Melissa Densmore</span> – "Participatory Co-Design in Africa: Building Inclusive Living Labs for Research and Innovation in AI"
+                  <span className="font-semibold text-blue-700">Aditya Vashistha</span> – <em>AI Safety for Marginalized Communities</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Aditya Vashistha</span> – "AI safety for marginalized communities"
+                  <span className="font-semibold text-blue-700">Danish Pruthi</span> – <em>Richer Outputs for Richer Countries?</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Ishtiaque Ahmed</span> – "AI Ethics: From Value Alignment to Value-in-Context"
+                  <span className="font-semibold text-blue-700">Ishtiaque Ahmed</span> – <em>AI Ethics: From Value Alignment to Value-in-Context</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Danish Pruthi</span> – "Richer Outputs for Richer Countries?"
+                  <span className="font-semibold text-blue-700">Melissa Densmore</span> – <em>Participatory Co-Design in Africa: Building Inclusive Living Labs for Research and Innovation in AI</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Tatapong Beyala</span> – "Empowering African women through AI-assisted storytelling solutions for inclusive innovation in the creative industry"
+                  <span className="font-semibold text-blue-700">Tatapong Beyala</span> – <em>Empowering African Women Through AI-Assisted Storytelling Solutions for Inclusive Innovation in the Creative Industry</em>
                 </li>
               </ul>
             </div>
@@ -177,7 +176,7 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
                 <li>
-                  <span className="font-semibold text-blue-800">Kentaro Toyama</span> – [vision talk title TBC]
+                  <span className="font-semibold text-blue-800">Kentaro Toyama</span> – <em>The Best-Case Outcome with AI?</em>
                 </li>
               </ul>
             </div>
@@ -185,16 +184,16 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-800 mb-2">⚡ Lightning Talks (8 mins each):</p>
               <ul className="ml-4 list-disc space-y-1"> 
                 <li>
-                  <span className="font-semibold text-blue-700">Howard Lakougna</span> – "State of language models for low-resourced languages"
+                  <span className="font-semibold text-blue-700">Fajri Koto</span> – Title TBD
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Yasir Zaki</span> – "Towards a World Wide Web without digital inequality"
+                  <span className="font-semibold text-blue-700">Howard Lakougna</span> – <em>State of Language Models for Low-Resourced Languages</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Wessam Ezzeddine</span> – "Risks of AGI"
+                  <span className="font-semibold text-blue-700">Wessam Ezzeddine</span> – <em>Risks of AGI</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Fajri Koto (Culture)</span> – short lightning talk on culture & language technologies [title TBC]
+                  <span className="font-semibold text-blue-700">Yasir Zaki</span> – <em>Towards a World Wide Web Without Digital Inequality</em>
                 </li>
               </ul>
             </div>
@@ -226,7 +225,7 @@ export default function ProgramSchedule() {
       },
     },
     {
-      time: "18:00 – 20:30",
+      time: "19:00 – 21:00",
       day1: { title: "Dinner", type: "break" },
       day2: {
         title:
@@ -318,7 +317,7 @@ export default function ProgramSchedule() {
                               <button
                                 type="button"
                                 onClick={() => handleScrollTo("anil-keynote")}
-                                className="underline decoration-pink-400 hover:text-pink-800"
+                                className="hover:text-pink-800"
                               >
                                 {s.title}
                               </button>
@@ -461,17 +460,7 @@ export default function ProgramSchedule() {
                             {/* Vision Talk and Lightning Talks Expansion */}
                             {sessionData.type === "plenary" && sessionData.details && (
                               <div>
-                                {/* Display Vision Talk Info */}
-                                <div className="mb-3 bg-blue-50 p-3 rounded border-l-4 border-blue-400">
-                                  <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins)</p>
-                                  <div className="text-xs text-blue-800">{sessionData.details}</div>
-                                </div>
-
-                                {/* Display Lightning Talks Info */}
-                                <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
-                                  <p className="font-bold text-blue-900 mb-2">⚡ Lightning Talks (8 mins each)</p>
-                                  <div className="text-xs text-blue-800">{sessionData.details}</div>
-                                </div>
+                                {sessionData.details}
                               </div>
                             )}
 
