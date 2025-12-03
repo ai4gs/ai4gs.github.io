@@ -12,6 +12,7 @@ import IITDLogo from '../photos/IIT Delhi - Abu Dhabi_Horizontal_page-0001.jpg';
 import MBZUAI_AI4GS_Banner from '../photos/AI4GS_banner_2.png';
 import MicrosoftLogo from '../photos/microsoft-logo.png';
 import Places from './Places';
+import Posters from './Posters';
 
 
 export default function AI4GSWebsite() {
@@ -27,6 +28,7 @@ export default function AI4GSWebsite() {
     { name: 'People', id: 'people', page: 'people' },
     { name: 'Program Schedule', id: 'program', page: 'program' },
     { name: 'Participate', id: 'participate', page: 'participate' },
+    { name: 'Poster Presentations', id: 'posters', page: 'posters' },
     {
       name: 'Venue',
       id: 'venue',
@@ -390,6 +392,8 @@ export default function AI4GSWebsite() {
         {currentPage === 'participate' && <Participate />}
         {currentPage === 'venue' && <Venue />}
         {currentPage === 'places' && <Places />}
+        {currentPage === 'posters' && <Posters />}
+
       </div>
 
       {/* Partners Section */}
