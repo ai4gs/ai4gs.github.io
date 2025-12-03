@@ -79,7 +79,7 @@ export default function People() {
     { name: 'Aseem Srivastava', photoUrl: AseemSrivastava, profile: 'https://as3eem.github.io/' },
     { name: 'Ananya Agrawal', photoUrl: AnanyaAgrawal, profile: 'https://in.linkedin.com/in/ananya-agrawal-6b9803222' },
     { name: 'Gayatri Bhat', photoUrl: GayatriBhat, profile: 'https://in.linkedin.com/in/gayatri-bhat-2a1a94193' },
-    { name: 'Helina Nigatu', photoUrl: HellinaNigatu, profile: '#' },
+    { name: 'Helina Nigatu', photoUrl: HellinaNigatu, profile: 'https://hhnigatu.github.io/' },
     { name: 'Madhur Jindal', photoUrl: MadhurJindal, profile: 'https://in.linkedin.com/in/madhur-jindal' },
     { name: 'Prashant Kodali', photoUrl: PrashantKodali, profile: 'https://in.linkedin.com/in/prashant-kodali' },
     { name: 'Sougata Saha', photoUrl: SougataSaha, profile: 'https://sougata-ub.github.io/' },

@@ -336,25 +336,6 @@ export default function ProgramSchedule() {
                         {s?.details && (
                           <div className="mt-2 text-left">{s.details}</div>
                         )}
-                        {s?.details && (
-                          <div className="mt-2 flex justify-center pt-2 border-t border-gray-300">
-                            <button
-                              type="button"
-                              onClick={() => {
-                                const dayNum = dayKey === "day1" ? 1 : dayKey === "day2" ? 2 : 3;
-                                setExpandedDay(dayNum);
-                                setExpandedTime(`${dayNum}-${idx}`);
-                                setTimeout(() => {
-                                  document.querySelector("#event-details")?.scrollIntoView({ behavior: "smooth" });
-                                }, 100);
-                              }}
-                              className="text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-full w-6 h-6 flex items-center justify-center transition cursor-pointer text-lg leading-none"
-                              title="View more details"
-                            >
-                              ℹ️
-                            </button>
-                          </div>
-                        )}
                       </td>
                     );
                   })}
@@ -497,52 +478,47 @@ export default function ProgramSchedule() {
                             {/* Panel Discussion Details */}
                             {sessionData.type === "open" && sessionData.details && (
                               <div className="text-xs text-gray-700 bg-pink-50 p-3 rounded border-l-4 border-pink-400">
-                                {sessionData.details}
+                                {/* Inauguration Block */}
+                                <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600 mb-3">
+                                  <p className="font-bold text-pink-900 mb-1">🎓 Inauguration</p>
+                                  <p className="text-xs text-pink-700">9:30 – 10:15 AM</p>
+                                </div>
                                 
-                                {/* Keynote Expandable Section */}
-                                <div className="mt-4 pt-4 border-t border-pink-200">
-                                  <button
-                                    onClick={() =>
-                                      setExpandedKeynoteDetails(
-                                        expandedKeynoteDetails === `${dayNum}-${idx}`
-                                          ? null
-                                          : `${dayNum}-${idx}`
-                                      )
-                                    }
-                                    className="flex items-center gap-2 text-pink-800 font-semibold hover:text-pink-900"
-                                  >
-                                    <span>
+                                {/* Keynote Block with Inline Expansion */}
+                                {idx === 0 && (
+                                <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600">
+                                  <div className="flex items-center gap-2 mb-1">
+                                    <button
+                                      onClick={() =>
+                                        setExpandedKeynoteDetails(
+                                          expandedKeynoteDetails === `${dayNum}-${idx}`
+                                            ? null
+                                            : `${dayNum}-${idx}`
+                                        )
+                                      }
+                                      className="text-pink-700 hover:text-pink-900 font-bold text-sm"
+                                    >
                                       {expandedKeynoteDetails === `${dayNum}-${idx}` ? "▼" : "▶"}
-                                    </span>
-                                    Keynote: AI and the Economies of the Global South
-                                  </button>
+                                    </button>
+                                    <p className="font-bold text-pink-900">🎤 Keynote by Prof. Anil B. Deolalikar</p>
+                                  </div>
+                                  <p className="text-xs text-pink-700 ml-6">10:15 – 11:00 AM</p>
                                   
                                   {expandedKeynoteDetails === `${dayNum}-${idx}` && (
-                                    <div className="mt-3 space-y-4 bg-white p-3 rounded text-gray-700">
+                                    <div className="mt-3 space-y-4 bg-white p-4 rounded text-gray-700 border border-pink-200 ml-6">
+                                      <h3 className="font-semibold text-pink-900 mb-2">Keynote: AI and the Economies of the Global South</h3>
+                                      
+                                      {/* Speaker */}
                                       <div>
                                         <h4 className="font-semibold text-pink-900 mb-2">Speaker</h4>
-                                        <p className="text-xs">Prof. Anil B. Deolalikar, Professor of Economics, University of California, Riverside (USA)</p>
+                                        <p className="text-sm">Prof. Anil B. Deolalikar, Professor of Economics, University of California, Riverside (USA)</p>
                                       </div>
                                       
-                                      <button
-                                        onClick={() =>
-                                          setExpandedKeynoteAbstract(
-                                            expandedKeynoteAbstract === `${dayNum}-${idx}`
-                                              ? null
-                                              : `${dayNum}-${idx}`
-                                          )
-                                        }
-                                        className="flex items-center gap-2 font-semibold text-pink-700 hover:text-pink-900 text-xs"
-                                      >
-                                        <span>
-                                          {expandedKeynoteAbstract === `${dayNum}-${idx}` ? "▼" : "▶"}
-                                        </span>
-                                        Abstract
-                                      </button>
-                                      
-                                      {expandedKeynoteAbstract === `${dayNum}-${idx}` && (
-                                        <div className="text-sm text-gray-700 bg-gray-50 p-3 rounded">
-                                          <p className="mb-3">
+                                      {/* Abstract */}
+                                      <div>
+                                        <h4 className="font-semibold text-pink-900 mb-2">Abstract</h4>
+                                        <div className="text-sm text-gray-700 space-y-2">
+                                          <p>
                                             Artificial intelligence (AI) presents both opportunities and risks for developing economies.
                                             However, it remains uncertain whether AI will serve as a leapfrogging technology, allowing the
                                             Global South to catch up with advanced economies, or if it will lead to greater divergence. This
@@ -550,7 +526,7 @@ export default function ProgramSchedule() {
                                             economics, emphasizing labor markets, infrastructure constraints, institutional challenges, and
                                             benefit-cost analysis.
                                           </p>
-                                          <p className="mb-3">
+                                          <p>
                                             The presentation examines how AI affects employment differently in developing countries than
                                             in advanced economies. Standard automation models, designed for high-income countries,
                                             require significant adjustments when applied to economies with large agricultural and informal
@@ -559,7 +535,7 @@ export default function ProgramSchedule() {
                                             productivity gains in agriculture, and the enigma of the large informal sector, which AI-driven
                                             changes might entirely overlook.
                                           </p>
-                                          <p className="mb-3">
+                                          <p>
                                             Besides labor market implications, the presentation covers additional challenges like data
                                             governance, infrastructure needs, and the institutional capacity necessary for effective regulation.
                                             It also explains how benefit-cost analysis – a tool commonly used in development economics to
@@ -574,27 +550,13 @@ export default function ProgramSchedule() {
                                             countries.
                                           </p>
                                         </div>
-                                      )}
+                                      </div>
                                       
-                                      <button
-                                        onClick={() =>
-                                          setExpandedKeynoteBio(
-                                            expandedKeynoteBio === `${dayNum}-${idx}`
-                                              ? null
-                                              : `${dayNum}-${idx}`
-                                          )
-                                        }
-                                        className="flex items-center gap-2 font-semibold text-pink-700 hover:text-pink-900 text-xs"
-                                      >
-                                        <span>
-                                          {expandedKeynoteBio === `${dayNum}-${idx}` ? "▼" : "▶"}
-                                        </span>
-                                        Speaker Bio
-                                      </button>
-                                      
-                                      {expandedKeynoteBio === `${dayNum}-${idx}` && (
-                                        <div className="text-sm text-gray-700 bg-gray-50 p-3 rounded">
-                                          <p className="mb-3">
+                                      {/* Speaker Bio */}
+                                      <div>
+                                        <h4 className="font-semibold text-pink-900 mb-2">Speaker Bio</h4>
+                                        <div className="text-sm text-gray-700 space-y-2">
+                                          <p>
                                             Anil Deolalikar is Professor of Economics and Founding
                                             Dean Emeritus of the School of Public Policy at the
                                             University of California, Riverside. He serves as Chair of the
@@ -603,7 +565,7 @@ export default function ProgramSchedule() {
                                             served as Chair of the Board of Directors for the UC-wide
                                             Global Health Institute from 2017 to 2022.
                                           </p>
-                                          <p className="mb-3">
+                                          <p>
                                             Deolalikar previously taught at the University of
                                             Washington, the University of Pennsylvania, and Harvard
                                             University. He served as Lead Human Development
@@ -611,7 +573,7 @@ export default function ProgramSchedule() {
                                             Senior Human Development Economist for the World Bank
                                             in Nairobi in 1995-96.
                                           </p>
-                                          <p className="mb-3">
+                                          <p>
                                             Deolalikar is a development economist who has published numerous books and articles
                                             on the economics of nutrition, health, education, demography, and poverty and social
                                             protection in developing countries. He is co-editor of <em>The Journal of Asian and African
@@ -628,10 +590,11 @@ export default function ProgramSchedule() {
                                             demography at Yale University.
                                           </p>
                                         </div>
-                                      )}
+                                      </div>
                                     </div>
                                   )}
                                 </div>
+                                )}
                               </div>
                             )}
                           </div>
