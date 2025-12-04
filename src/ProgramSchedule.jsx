@@ -76,7 +76,7 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
                 <li>
-                  <span className="font-semibold text-blue-800">Alham Fikri Aji</span> – <em>VLMs are Confused Tourists</em>
+                  <span className="font-semibold text-blue-800">Alham Fikri Aji</span> – Title TBD
                 </li>
               </ul>
             </div>
@@ -94,6 +94,9 @@ export default function ProgramSchedule() {
                 </li>
                 <li>
                   <span className="font-semibold text-blue-700">Luciana Benotti</span> – <em>Sourcing Training/Evaluation Data for AI: LatamGPT and HESEIA Projects</em>
+                </li>
+                <li>
+                  <span className="font-semibold text-blue-700">Salman Khan</span> – <em>Building Culturally Aware Multimodal Benchmark</em>
                 </li>
               </ul>
             </div>
