@@ -187,6 +187,9 @@ export default function ProgramSchedule() {
               <p className="font-bold text-blue-800 mb-2">⚡ Lightning Talks (8 mins each):</p>
               <ul className="ml-4 list-disc space-y-1"> 
                 <li>
+                  <span className="font-semibold text-blue-700">Chetan Arora</span> – <em>AI in Healthcare for the Global South</em>
+                </li>
+                <li>
                   <span className="font-semibold text-blue-700">Fajri Koto</span> – Title TBD
                 </li>
                 <li>
