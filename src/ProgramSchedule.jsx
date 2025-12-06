@@ -110,7 +110,7 @@ export default function ProgramSchedule() {
         venue: "MUH",
         details: (
           <div className="text-sm text-gray-700 mt-1">
-            <p className="mb-2"><strong>Topic:</strong> <em>Global South AI: Forging Tech's Next Frontier</em></p>
+            <p className="mb-2"><strong>Title:</strong> <em>Global South AI: Forging Tech's Next Frontier</em></p>
             <p className="font-semibold mt-1 mb-1">Panelists:</p>
             <ul className="ml-4 list-disc">
               <li>Elizabeth Churchill (Moderator)</li>
