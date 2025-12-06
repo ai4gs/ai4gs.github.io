@@ -105,12 +105,12 @@ export default function ProgramSchedule() {
       },
       day2: {
         title:
-          "Open Day Panel Discussion — Transdisciplinary Perspectives on AI for Global South",
+          "Open Day Panel Discussion",
         type: "open",
         venue: "MUH",
         details: (
           <div className="text-sm text-gray-700 mt-1">
-            <p className="font-semibold mb-2"><strong>Panel Discussion on</strong> <em>Global South AI: Forging Tech's Next Frontier</em></p>
+            <p className="mb-2"><strong>Topic:</strong> <em>Global South AI: Forging Tech's Next Frontier</em></p>
             <p className="font-semibold mt-1 mb-1">Panelists:</p>
             <ul className="ml-4 list-disc">
               <li>Elizabeth Churchill (Moderator)</li>
