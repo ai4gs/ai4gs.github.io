@@ -190,7 +190,7 @@ export default function ProgramSchedule() {
                   <span className="font-semibold text-blue-700">Chetan Arora</span> – <em>AI in Healthcare for the Global South</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Fajri Koto</span> – Title TBD
+                  <span className="font-semibold text-blue-700">Fajri Koto</span> – <em>A National Survey of Language Technology Needs in Indonesia</em>
                 </li>
                 <li>
                   <span className="font-semibold text-blue-700">Howard Lakougna</span> – <em>State of Language Models for Low-Resourced Languages</em>
