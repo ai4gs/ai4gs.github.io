@@ -87,7 +87,7 @@ export default function ProgramSchedule() {
                   <span className="font-semibold text-blue-700">Bashar Alhafni</span> – <em>Arabic NLP</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Hariprasad Kodamana </span> –  Title TBD
+                  <span className="font-semibold text-blue-700">Hariprasad Kodamana</span> – <em>Beyond Zero-Sum: Can We Create AI Blueprint for Synergistic Energy and Sustainable Environment?</em>
                 </li>
                 <li>
                   <span className="font-semibold text-blue-700">Julia Kreutzer</span> – <em>Aya Model Family – Building Multilingual LLMs: What Do We Rely on and What Is Missing?</em>
