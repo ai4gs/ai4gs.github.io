@@ -50,6 +50,9 @@ import SalmanKhan from '../photos/Salman Khan.jpeg';
 import TatapongBeyala from '../photos/Tatapong Beyala.jpeg';
 import AlhamFikriAji from '../photos/Alham Aji Fikri.jpg';
 import ParagSingla from '../photos/Parag Singla.jpg';
+import SalsabilaZahirahPranida from '../photos/Salsabila Zahirah Pranida.png';
+import MuhammadDehanAlKautsar from '../photos/Muhammad Dehan Al Kautsar.jpeg';
+import AmrKeleg from '../photos/Amr Keleg.jpg';
 
 export default function People() {
   const [selectedView, setSelectedView] = useState('organizers');
@@ -77,11 +80,14 @@ export default function People() {
 
   const organizingMembers = [
     { name: 'Aseem Srivastava', photoUrl: AseemSrivastava, profile: 'https://as3eem.github.io/' },
+    { name: 'Amr Keleg', photoUrl: AmrKeleg, profile: 'https://amr-keleg.github.io/' },
     { name: 'Ananya Agrawal', photoUrl: AnanyaAgrawal, profile: 'https://in.linkedin.com/in/ananya-agrawal-6b9803222' },
     { name: 'Gayatri Bhat', photoUrl: GayatriBhat, profile: 'https://in.linkedin.com/in/gayatri-bhat-2a1a94193' },
     { name: 'Helina Nigatu', photoUrl: HellinaNigatu, profile: 'https://hhnigatu.github.io/' },
     { name: 'Madhur Jindal', photoUrl: MadhurJindal, profile: 'https://in.linkedin.com/in/madhur-jindal' },
+    { name: 'Muhammad Dehan Al Kautsar', photoUrl: MuhammadDehanAlKautsar, profile: 'https://www.linkedin.com/in/dehanalkautsar/' },
     { name: 'Prashant Kodali', photoUrl: PrashantKodali, profile: 'https://in.linkedin.com/in/prashant-kodali' },
+    { name: 'Salsabila Zahirah Pranida', photoUrl: SalsabilaZahirahPranida, profile: 'https://irasalsabila.github.io/' },
     { name: 'Sougata Saha', photoUrl: SougataSaha, profile: 'https://sougata-ub.github.io/' },
     { name: 'Sourabrata Mukherjee', photoUrl: SourabrataMukherjee, profile: 'https://souro.github.io/' }
   ].sort((a, b) => a.name.localeCompare(b.name));

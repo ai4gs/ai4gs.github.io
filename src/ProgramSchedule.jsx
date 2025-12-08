@@ -22,6 +22,7 @@ export default function ProgramSchedule() {
         venue: "MUH",
         details: (
           <div className="text-sm text-gray-700 mt-2 space-y-2">
+            <p className="font-semibold text-pink-800 mb-2">🪑 Session Chair: Thamar Solorio</p>
             <div className="bg-pink-100 p-3 rounded border-l-4 border-pink-600">
               <div className="flex items-center justify-between">
                 <div>
@@ -72,6 +73,7 @@ export default function ProgramSchedule() {
         venue: "Lecture Hall 1",
         details: (
           <div className="text-sm text-gray-700 mt-2 space-y-3">
+            <p className="font-semibold text-indigo-800 mb-2">🪑 Session Chair: Sunayana Sitaram</p>
             <div className="bg-blue-100 p-3 rounded border-l-4 border-blue-600">
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
@@ -138,11 +140,12 @@ export default function ProgramSchedule() {
         venue: "Lecture Hall 1",
         details: (
           <div className="text-sm text-gray-700 mt-2 space-y-3">
+            <p className="font-semibold text-indigo-800 mb-2">🪑 Session Chair: Fajri Koto</p>
             <div className="bg-blue-100 p-3 rounded border-l-4 border-blue-600">
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
                 <li>
-                  <span className="font-semibold text-blue-800">Munmun De Choudhury</span> – Title TBD
+                  <span className="font-semibold text-blue-800">Munmun De Choudhury</span> – <em>A Human- and Humane-Centered Vision of Digital Mental Health in a Post-AI World</em>
                 </li>
               </ul>
             </div>
@@ -175,6 +178,7 @@ export default function ProgramSchedule() {
         venue: "Lecture Hall 1",
         details: (
           <div className="text-sm text-gray-700 mt-2 space-y-3">
+            <p className="font-semibold text-indigo-800 mb-2">🪑 Session Chair: Hariprasad Kodamana</p>
             <div className="bg-blue-100 p-3 rounded border-l-4 border-blue-600">
               <p className="font-bold text-blue-900 mb-2">🎤 Vision Talk (40 mins):</p>
               <ul className="ml-4">
@@ -196,7 +200,7 @@ export default function ProgramSchedule() {
                   <span className="font-semibold text-blue-700">Howard Lakougna</span> – <em>State of Language Models for Low-Resourced Languages</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Wessam Ezzeddine</span> – <em>Risks of AGI</em>
+                  <span className="font-semibold text-blue-700">Sandeep Sukumaran</span> – <em>The Monsoon: Lifeline of the Global South, Learning to Predict it Across Scales</em>
                 </li>
                 <li>
                   <span className="font-semibold text-blue-700">Yasir Zaki</span> – <em>Towards a World Wide Web Without Digital Inequality</em>
@@ -232,13 +236,34 @@ export default function ProgramSchedule() {
     },
     {
       time: "19:00 – 21:00",
-      day1: { title: "Dinner", type: "break" },
+      day1: { 
+        title: "Dinner", 
+        type: "break",
+        details: (
+          <p className="text-xs text-amber-700 bg-amber-50 px-2 py-1 rounded mt-1 inline-block">
+            🚌 Bus departs MBZUAI (Siemens Energy Building) at 6:30 PM
+          </p>
+        ),
+      },
       day2: {
         title:
           "Social Event & Dinner at IIT Delhi Abu Dhabi Campus",
         type: "break",
+        details: (
+          <p className="text-xs text-amber-700 bg-amber-50 px-2 py-1 rounded mt-1 inline-block">
+            🚌 Bus departs MBZUAI (Siemens Energy Building) at 6:30 PM
+          </p>
+        ),
       },
-      day3: { title: "Dinner", type: "break" },
+      day3: { 
+        title: "Dinner", 
+        type: "break",
+        details: (
+          <p className="text-xs text-amber-700 bg-amber-50 px-2 py-1 rounded mt-1 inline-block">
+            🚌 Bus departs MBZUAI (Siemens Energy Building) at 6:30 PM
+          </p>
+        ),
+      },
     },
   ];
 
