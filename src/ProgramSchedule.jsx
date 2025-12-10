@@ -92,9 +92,6 @@ export default function ProgramSchedule() {
                   <span className="font-semibold text-blue-700">Hariprasad Kodamana</span> – <em>Beyond Zero-Sum: Can We Create AI Blueprint for Synergistic Energy and Sustainable Environment?</em>
                 </li>
                 <li>
-                  <span className="font-semibold text-blue-700">Julia Kreutzer</span> – <em>Aya Model Family – Building Multilingual LLMs: What Do We Rely on and What Is Missing?</em>
-                </li>
-                <li>
                   <span className="font-semibold text-blue-700">Luciana Benotti</span> – <em>Sourcing Training/Evaluation Data for AI: LatamGPT and HESEIA Projects</em>
                 </li>
                 <li>
@@ -198,6 +195,9 @@ export default function ProgramSchedule() {
                 </li>
                 <li>
                   <span className="font-semibold text-blue-700">Howard Lakougna</span> – <em>State of Language Models for Low-Resourced Languages</em>
+                </li>
+                <li>
+                  <span className="font-semibold text-blue-700">Julia Kreutzer</span> – <em>Aya Model Family – Building Multilingual LLMs: What Do We Rely on and What Is Missing?</em>
                 </li>
                 <li>
                   <span className="font-semibold text-blue-700">Sandeep Sukumaran</span> – <em>The Monsoon: Lifeline of the Global South, Learning to Predict it Across Scales</em>
