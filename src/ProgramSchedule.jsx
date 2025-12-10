@@ -203,6 +203,9 @@ export default function ProgramSchedule() {
                   <span className="font-semibold text-blue-700">Sandeep Sukumaran</span> – <em>The Monsoon: Lifeline of the Global South, Learning to Predict it Across Scales</em>
                 </li>
                 <li>
+                  <span className="font-semibold text-blue-700">Wessam Ezzeddine</span> – <em>Risks of AGI</em>
+                </li>
+                <li>
                   <span className="font-semibold text-blue-700">Yasir Zaki</span> – <em>Towards a World Wide Web Without Digital Inequality</em>
                 </li>
               </ul>
