@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, Users, Calendar, Mail, BookOpen, Heart } from 'lucide-react';
+import { Menu, X, Globe, Users, Calendar, Mail, BookOpen, Heart, FileText, Download } from 'lucide-react';
 import People from './People';
 import Partners from './Partners';
 import Questions from './Questions';
@@ -13,6 +13,7 @@ import MBZUAI_AI4GS_Banner from '../photos/AI4GS_banner_2.png';
 import MicrosoftLogo from '../photos/microsoft-logo.png';
 import Places from './Places';
 import Posters from './Posters';
+import AI4GSReport from './MBZUAI_AI4GS_V04_090226-A4_digital version.pdf';
 
 
 export default function AI4GSWebsite() {
@@ -128,9 +129,35 @@ export default function AI4GSWebsite() {
 
   const renderHomePage = () => (
     <>
+      {/* Report Banner Section */}
+      <section className="pt-20 pb-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <div className="bg-white rounded-lg shadow-xl p-8 border-l-4 border-indigo-600">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <FileText className="h-16 w-16 text-indigo-600 flex-shrink-0" />
+              <div className="flex-1">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  The official report from the event is now available online
+                </h3>
+              </div>
+              <a
+                href={AI4GSReport}
+                download="AI4GS_Report.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg flex-shrink-0 whitespace-nowrap"
+              >
+                <Download className="h-5 w-5" />
+                Download Report
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section (Banner Image) */}
-      <section id="home" className="pt-20 pb-8 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section id="home" className="pt-8 pb-8 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
           <img
             src={MBZUAI_AI4GS_Banner}
             alt="AI4GS Banner"
