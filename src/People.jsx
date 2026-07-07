@@ -13,8 +13,8 @@ import DanishPruthi from '../photos/Danish Pruthi.jpg';
 import ElizabethChurchill from '../photos/Elizabeth Churchill.jpg';
 import FajriKoto from '../photos/Fajri Koto.png';
 import GayatriBhat from '../photos/Gayatri Bhat.jpg';
-import HellinaNigatu from '../photos/Hellina Nigatu.png';
 import HowardLakougna from '../photos/Howard Lakougna.jpeg';
+import MukundChoudhary from '../photos/Mukund Choudhary.jpg';
 import IshtiaqueAhmed from '../photos/Ishtiaque Ahmed.jpg';
 // import JackiONeill from '../photos/Jacki O Neill.jpg';
 import JoyojeetPal from '../photos/Joyojeet Pal.jpg';
@@ -83,8 +83,8 @@ export default function People() {
     { name: 'Amr Keleg', photoUrl: AmrKeleg, profile: 'https://amr-keleg.github.io/' },
     { name: 'Ananya Agrawal', photoUrl: AnanyaAgrawal, profile: 'https://in.linkedin.com/in/ananya-agrawal-6b9803222' },
     { name: 'Gayatri Bhat', photoUrl: GayatriBhat, profile: 'https://in.linkedin.com/in/gayatri-bhat-2a1a94193' },
-    { name: 'Helina Nigatu', photoUrl: HellinaNigatu, profile: 'https://hhnigatu.github.io/' },
     { name: 'Madhur Jindal', photoUrl: MadhurJindal, profile: 'https://in.linkedin.com/in/madhur-jindal' },
+    { name: 'Mukund Choudhary', institution: 'MBZUAI', photoUrl: MukundChoudhary, profile: 'https://mukundc2k.github.io/' },
     { name: 'Muhammad Dehan Al Kautsar', photoUrl: MuhammadDehanAlKautsar, profile: 'https://www.linkedin.com/in/dehanalkautsar/' },
     { name: 'Prashant Kodali', photoUrl: PrashantKodali, profile: 'https://in.linkedin.com/in/prashant-kodali' },
     { name: 'Salsabila Zahirah Pranida', photoUrl: SalsabilaZahirahPranida, profile: 'https://irasalsabila.github.io/' },
